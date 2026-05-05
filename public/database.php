@@ -23,7 +23,7 @@ $dbh->query('CREATE TABLE IF NOT EXISTS notes (
     id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     content TEXT,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-  );');
+ );');
 
 $stmt = $dbh->query('SELECT * FROM notes ORDER BY created_at DESC;');
 $recordLength = $stmt->rowCount();
